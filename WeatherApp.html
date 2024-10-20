@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="WeatherApp.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="header">
+        <img alt="The Weather Channel Logo" height="40" src="https://storage.googleapis.com/a1aa/image/XrGreRWg7NzgLyNOj5TxevRHEDsWwBwRFeqaqYFwm3iLPtMnA.jpg" width="100"/>
+        <div class="search-bar">
+            <input id="city-input" placeholder="Search City or Postcode" type="text"/>
+            <i class="fas fa-search"></i>
+        </div>
+        <div class="unit" id="unit">
+            <select name="units" class="selectdiv" id="selectdiv">
+                <option class="option1" selected value="cel">C°</option>
+                <option class="option2" value="fer">F°</option>
+            </select>
+        </div>
+    </div>
+    <div class="sidebar">
+     <a href="#">
+      Dashboard
+     </a>
+     <a href="#">
+      Table
+     </a>
+    </div>
+    <div class="main-content">
+     <div class="content">
+      <div class="weather-forecast" id="weather-forecast">   
+      </div>
+      <div class="charts">
+      <canvas class="barchart" id="weather-chart"></canvas>
+      <canvas class="Doughnut-chart" id="weather-chart2"></canvas>
+      <canvas class="line-chart" id="weather-chart3"></canvas>
+    </div>
+     </div>
+    </div>
+   </body>
+    <script src="WeatherApp.js"></script>
+</body>
+</html>
