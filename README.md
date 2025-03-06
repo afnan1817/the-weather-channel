@@ -1,0 +1,1 @@
+this is a project for tracking weather data and comparing weatherData of different cities
